@@ -1,0 +1,95 @@
+{
+	ACPI = {
+		DSDT = {
+			Debug = YES;
+			Fixes = {
+				"AddDTGP_0001" = YES;
+				"FixAirport_4000" = YES;
+			};
+		};
+	};
+	Boot = {
+		Arguments = "kext-dev-mode=1";
+		Log = YES;
+	};
+	CPU = {};
+	Devices = {
+		FakeID = {
+			WIFI = 0x43a014E4;
+		};
+	};
+	DisableDrivers = (
+		Nothing,
+	);
+	GUI = {};
+	Graphics = {};
+	KernelAndKextPatches = {
+		KextsToPatch = (
+			{
+				Comment = "10.12-BCM94352-fvco-darkvoid";
+				Find = <81f952aa 00007529>;
+				Name = AirPortBrcm4360;
+				Replace = <81f952aa 00006690>;
+			},
+			{
+				Comment = "10.11+-BCM94352-5GHz-US-FCC-darkvoid";
+				Find = <4183fcff 742c48>;
+				Name = AirPortBrcm4360;
+				Replace = <66c70655 53eb2b>;
+			},
+			{
+				Comment = "10.11+-BCM94352-Airport-Extreme-skvo";
+				Find = <6b100000 750d>;
+				Name = AirPortBrcm4360;
+				Replace = <6b100000 9090>;
+			},
+			{
+				Comment = "10.11+-BT4LE-Handoff-Hotspot-lisai9093";
+				Find = <4885ff74 47488b07>;
+				Name = IOBluetoothFamily;
+				Replace = <41be0f00 0000eb44>;
+			},
+			{
+				Comment = "10.12-BCM94352-0x43b114e4-Info.plist-bpresles";
+				Find = <3c737472 696e673e 70636931 3465342c 34336261 3c2f7374 72696e67 3e>;
+				InfoPlistPatch = YES;
+				Name = AirPortBrcm4360;
+				Replace = <3c737472 696e673e 70636931 3465342c 34336231 3c2f7374 72696e67 3e>;
+			},
+			{
+				Comment = "10.11-BCM94352-CC=#a-Ramalama";
+				Find = <4183fcff 742c48>;
+				Name = AirPortBrcm4360;
+				Replace = <66c70623 61eb2b>;
+			},
+			{
+				Comment = "10.11+-BCM94352-Whitelest-0x4331-iMac14,3-skvo";
+				Find = <4d61632d 43364546 41363339 36324643 36454130>;
+				Name = AirPortBrcm4360;
+				Replace = <4d61632d 32374144 42423742 34434545 38453631>;
+			},
+			{
+				Comment = "10.11+-BCM94352-Whitelest-0x4353-MacBoolAir5,2-skvo";
+				Find = <4d61632d 43364546 41363339 36324643 36454130>;
+				Name = AirPortBrcm4360;
+				Replace = <4d61632d 32374144 42423742 34434545 38453631>;
+			},
+			{
+				Comment = "10.10-BCM94352-5GHz-US-FCC-dv";
+				Find = <4183fcff 742c48>;
+				Name = AirPortBrcm4360;
+				Replace = <66c70655 53eb2b>;
+			},
+			{
+				Comment = "10.9-BCM94352-5 GHz";
+				Find = <015854>;
+				Name = AirPortBrcm4360;
+				Replace = <015858>;
+			},
+		);
+	};
+	SMBIOS = {};
+	SystemParameters = {
+		InjectKexts = YES;
+	};
+}
