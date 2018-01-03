@@ -29,35 +29,35 @@
 				Comment = "10.12-BCM94352-fvco-darkvoid";
 				Find = <81f952aa 00007529>;
 				MatchOS = "10.12.x";
-				Name = "com.apple.driver.AirPortBrcm4360";
+				Name = "com.apple.driver.AirPort,Brcm4360";
 				Replace = <81f952aa 00006690>;
 			},
 			{
 				Comment = "10.11-BCM94352-5GHz-US-FCC-darkvoid";
 				Find = <4183fcff 742c48>;
 				MatchOS = "10.11.x";
-				Name = "com.apple.driver.AirPortBrcm4360";
+				Name = "com.apple.driver.AirPort,Brcm4360";
 				Replace = <66c70655 53eb2b>;
 			},
 			{
 				Comment = "10.10-BCM94352-5GHz-US-FCC-dv";
 				Find = <4183fcff 742c48>;
 				MatchOS = "10.10.x";
-				Name = "com.apple.driver.AirPortBrcm4360";
+				Name = "com.apple.driver.AirPort,Brcm4360";
 				Replace = <66c70655 53eb2b>;
 			},
 			{
 				Comment = "10.9-BCM94352-5 GHz";
 				Find = <015854>;
 				MatchOS = "10.9.x";
-				Name = "com.apple.driver.AirPortBrcm4360";
+				Name = "com.apple.driver.AirPort,Brcm4360";
 				Replace = <015858>;
 			},
 			{
 				Comment = "10.11+-BCM94352-CC-Sebinouse (edit 55 53 to CC, replace Item 1, above)";
 				Find = <4183fcff 742c48>;
 				MatchOS = "10.11.x, 10.12.x";
-				Name = "com.apple.driver.AirPortBrcm4360";
+				Name = "com.apple.driver.AirPort,Brcm4360";
 				Replace = <66c70655 53eb2b>;
 			},
 			{
@@ -71,21 +71,21 @@
 				Comment = "10.11+-BCM94352-Airport-Extreme-skvo";
 				Find = <6b100000 750d>;
 				MatchOS = "10.11.x, 10.12.x, 10.13.x";
-				Name = "com.apple.driver.AirPortBrcm4360";
+				Name = "com.apple.driver.AirPort,Brcm4360";
 				Replace = <6b100000 9090>;
 			},
 			{
 				Comment = "10.11+-Disable-Whitelist-check-RehabMan";
 				Find = <31db4ccb 65d87512>;
 				MatchOS = "10.11.x, 10.12.x";
-				Name = "com.apple.driver.AirPortBrcm4360";
+				Name = "com.apple.driver.AirPort,Brcm4360";
 				Replace = <31dbffc3 90909090>;
 			},
 			{
 				Comment = "10.11-BCM94352-CC=#a-Ramalama";
 				Find = <4183fcff 742c48>;
 				MatchOS = "10.11.x, 10.12.x";
-				Name = "com.apple.driver.AirPortBrcm4360";
+				Name = "com.apple.driver.AirPort,Brcm4360";
 				Replace = <66c70623 61eb2b>;
 			},
 		);
